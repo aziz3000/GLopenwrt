@@ -1,16 +1,23 @@
 Overview
 ========
 
-This repo is maintained by GL.iNet team, which is used to release stock firmware.
+This repo is maintained by GL.iNet plus by aziz , which is used to release stock firmware.
 
-Feature
+1.DIY特点：
+=======
+用于GL-mt300n-v2，64M固件，推荐编译 Openwrt-19.17.8版本固件，
+feeds.conf.default中加入了软件包。
+src-git haiibo https://github.com/haiibo/openwrt-packages.git
+支持 Openclash
+
+2.Feature
 =======
 
 - Support latest device of GL.iNet
 - Support kernel driver which isn't support by kernel-tree
 - Keep updating with stock firmware
 
-Branches Introduction
+3.Branches Introduction
 =======
 - **openwrt-18.06-siflower** Only supports SF1200
 
@@ -30,7 +37,7 @@ Branches Introduction
 
 **For example, if you want to use openwrt-19.07.7 to compile the production firmware, you need to use *```git checkout openwrt-19.07.7```* command to switch openwrt-19.07.7 branch.**
 
-Product Branch Relationship Table
+4.Product Branch Relationship Table
 =======
 **Support Branch:** Branches that support this product
 
@@ -65,7 +72,7 @@ Product Branch Relationship Table
 
 ^nor+emmc: Can compile the firmware that runs on nor flash and emmc
 
-Prerequisites
+5.Prerequisites
 =============
 
 To build your own firmware you need to have access to a Linux, BSD or MacOSX system (case-sensitive filesystem required). Cygwin will not be supported because of the lack of case sensitiveness in the file system. Ubuntu is usually recommended.
